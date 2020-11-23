@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AngularExemplos": {
+    "angular-exemplos": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/AngularExemplos",
+            "outputPath": "dist/angular-exemplos",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "AngularExemplos:build"
+            "browserTarget": "angular-exemplos:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "AngularExemplos:build:production"
+              "browserTarget": "angular-exemplos:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AngularExemplos:build"
+            "browserTarget": "angular-exemplos:build"
           }
         },
         "test": {
@@ -110,19 +110,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "AngularExemplos:serve"
+            "devServerTarget": "angular-exemplos:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "AngularExemplos:serve:production"
+              "devServerTarget": "angular-exemplos:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "AngularExemplos",
+  "defaultProject": "angular-exemplos",
   "cli": {
-    "analytics": "f9d35ee6-55db-44eb-a784-46c05460c4b8"
+    "analytics": "73b7da98-645f-419a-b24e-433573fa074e"
   }
 }

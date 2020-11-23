@@ -3,16 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HelloWordComponent } from './hello-word/hello-word.component';
+import { HelloWorldComponent } from './hello-world/hello-world.component';
+import { FormsModule } from '@angular/forms';
+import { DataHoraComponent } from './data-hora/data-hora.component';
+import { IncrementarDecrementarComponent } from './incrementar-decrementar/incrementar-decrementar.component';
+import { LivrosComponent } from './livros/livros.component';
+import { ConsumoCombustivelComponent } from './consumo-combustivel/consumo-combustivel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HelloWordComponent
+    HelloWorldComponent,
+    DataHoraComponent,
+    IncrementarDecrementarComponent,
+    LivrosComponent,
+    ConsumoCombustivelComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

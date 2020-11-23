@@ -1,0 +1,13 @@
+<div>
+    <label for="">Informe a distância percorrida: </label><br>
+    <input type="text" [(ngModel)]="distancia"><br><br>
+    <label for="">Informe a quantidade de litros utilizados: </label><br>
+    <input type="text" [(ngModel)]="litro"><br><br>
+
+    <button (click)="realizaCalculo()">Calcular</button>
+    <div>
+        <p *ngIf="calculo>= 13"> {{calculo}} Km/l (Econômico)</p>
+        <p *ngIf="(calculo>= 10) && (calculo <=12.99)"> {{calculo}} Km/l (Normal)</p>
+        <p *ngIf="(calculo <= 9.99)"> {{calculo}} Km/l (Gastador)</p><br>
+    </div>
+</div>
